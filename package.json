@@ -10,19 +10,16 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "autobind-decorator": "^2.4.0",
     "formik": "^2.0.6",
-    "native-base": "^2.13.8",
     "prop-types": "^15.7.2",
     "react": "16.9.0",
     "react-native": "0.61.4",
-    "react-native-elements": "^1.2.7",
     "react-native-gesture-handler": "^1.5.2",
     "react-native-share": "^2.0.0",
     "react-navigation": "^4.0.10",
     "react-navigation-stack": "^1.10.3",
     "rn-fetch-blob": "^0.11.2",
-    "validate.js": "^0.13.1",
+    "typescript": "^3.7.3",
     "yup": "^0.27.0"
   },
   "devDependencies": {
@@ -30,7 +27,7 @@
     "@babel/runtime": "^7.7.5",
     "@react-native-community/eslint-config": "^0.0.5",
     "babel-jest": "^24.9.0",
-    "eslint": "^6.7.2",
+    "eslint": "^5.0.0",
     "jest": "^24.9.0",
     "metro-react-native-babel-preset": "^0.56.0",
     "react-test-renderer": "16.9.0"
