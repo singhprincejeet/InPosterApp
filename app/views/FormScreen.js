@@ -10,7 +10,7 @@ import textFormValidation from '../assets/validations/textFormValidation'
 import BodyTextFormComponent from '../components/BodyTextFormComponent';
 import FooterTextFormComponent from '../components/FooterTextFormComponent';
 
-export default class HomeScreen extends React.Component {
+export default class FormScreen extends React.Component {
   initialValues = {
     bodyText: '',
     bodyAlign: '0',

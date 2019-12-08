@@ -1,18 +1,12 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow
- */
-import {createStackNavigator} from 'react-navigation-stack';
+import { createStackNavigator } from 'react-navigation-stack';
 
-import HomeScreen from './app/views/HomeScreen'
-import ImageScreen from './app/views/ImageScreen';
+import PreviewScreen from './app/views/PreviewScreen';
+import FormScreen from './app/views/FormScreen';
 
 const AppNavigator = createStackNavigator({
-  Home: { screen: HomeScreen},
-  Image: { screen: ImageScreen }
+  Home: { screen: FormScreen },
+  Form: { screen: FormScreen },
+  Image: { screen: PreviewScreen },
 });
 
 export default AppNavigator;

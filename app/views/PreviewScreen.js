@@ -5,7 +5,7 @@ import Share from 'react-native-share';
 
 import styles from '../assets/styles';
 
-export default class ImageScreen extends Component {
+export default class PreviewScreen extends Component {
   state = {path: ''}
 
   static getDerivedStateFromProps(props, state){
