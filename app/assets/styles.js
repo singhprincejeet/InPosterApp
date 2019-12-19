@@ -16,6 +16,8 @@ const styles = StyleSheet.create({
   },
   sectionContainer: { alignSelf: 'stretch' },
   button: {
+    marginLeft: 10,
+    marginRight: 10,
     marginTop: 30,
     elevation: 3,
     position: 'relative',
@@ -38,8 +40,9 @@ const styles = StyleSheet.create({
     padding: 15,
   },
   previewImageContainer: {
-    height: '50%',
-    borderWidth: 1
+    width: '100%',
+    aspectRatio: 1,
+    borderWidth: 1,
   },
   previewImage: {
     width: '100%',

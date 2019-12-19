@@ -6,12 +6,12 @@ import Share from 'react-native-share';
 import styles from '../assets/styles';
 
 export default class PreviewScreen extends Component {
-  state = {path: ''}
+  state = { uri: '' }
 
-  static getDerivedStateFromProps(props, state){
+  static getDerivedStateFromProps(props, state) {
     const { navigation } = props;
-    var path = 'file://' + navigation.getParam('path');
-    state.path = path;
+    var uri = 'file://' + navigation.getParam('path');
+    state.uri = uri;
     return state;
   }
 
@@ -19,10 +19,10 @@ export default class PreviewScreen extends Component {
     return (
       <View style={styles.imageScreenContainer}>
         <View style={styles.previewImageContainer}>
-        <Image
-        source={{ uri: this.state.path }}
-        style={styles.previewImage}
-      />
+          <Image
+            source={{ uri: this.state.uri }}
+            style={styles.previewImage}
+          />
         </View>
         <View style={styles.button}>
           <Button title='Share' onPress={this.share}></Button>
@@ -31,9 +31,9 @@ export default class PreviewScreen extends Component {
     )
   };
 
-   share = async() => {
+  share = async () => {
     const shareOptions = {
-      url: this.state.path,
+      url: this.state.uri,
       type: 'image/png',
       failOnCancel: false,
     };
