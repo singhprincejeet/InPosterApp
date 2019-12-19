@@ -33,7 +33,6 @@ export default class FormScreen extends React.Component {
           values,
           errors,
         }) => (<View style={styles.container}>
-          <Text style={styles.title}>InPoster</Text>
           <BodyTextFormComponent
             bodyText={values.bodyText}
             bodyTextError={errors.bodyText}
@@ -66,17 +65,18 @@ export default class FormScreen extends React.Component {
   }
 
   handleSubmit = async (input) => {
+    var image_uri = this.props.navigation.getParam('uri');
     let imageGenerateService = new ImageGenerateService();
     try {
-      let imagePath = await imageGenerateService.generate(input);
-      this.goToImageScreen(imagePath);
+      let imagePath = await imageGenerateService.generate(input, image_uri);
+      this.goToPreviewScreen(imagePath);
     } catch (err) {
       ToastAndroid.show(`'Error =>' ${err}`, ToastAndroid.SHORT);
     }
   }
 
-  goToImageScreen = (imagePath) => {
-    this.props.navigation.navigate('Image', {
+  goToPreviewScreen = (imagePath) => {
+    this.props.navigation.navigate('Preview', {
       path: imagePath
     });
   }

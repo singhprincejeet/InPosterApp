@@ -10,24 +10,26 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "formik": "^2.0.6",
+    "formik": "^2.0.8",
+    "jetifier": "^1.6.5",
     "prop-types": "^15.7.2",
     "react": "16.9.0",
     "react-native": "0.61.4",
+    "react-native-android-image-cropper": "^0.2.4",
     "react-native-gesture-handler": "^1.5.2",
     "react-native-share": "^2.0.0",
     "react-navigation": "^4.0.10",
     "react-navigation-stack": "^1.10.3",
     "rn-fetch-blob": "^0.11.2",
-    "typescript": "^3.7.3",
+    "typescript": "^3.7.4",
     "yup": "^0.27.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.7.5",
-    "@babel/runtime": "^7.7.5",
+    "@babel/core": "^7.7.7",
+    "@babel/runtime": "^7.7.7",
     "@react-native-community/eslint-config": "^0.0.5",
     "babel-jest": "^24.9.0",
-    "eslint": "^5.0.0",
+    "eslint": "^5.16.0",
     "jest": "^24.9.0",
     "metro-react-native-babel-preset": "^0.56.0",
     "react-test-renderer": "16.9.0"
