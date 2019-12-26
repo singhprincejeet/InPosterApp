@@ -16,12 +16,12 @@ export default class ImageGenerateService {
         text: input.bodyText,
         size: input.bodyFontSize,
         align: input.bodyAlign,
-        color: "0"
+        color: input.textColor,
       }, footer: {
         text: input.footerText,
         size: input.footerFontSize,
         align: input.footerAlign,
-        color: "0"
+        color: input.textColor,
       },
     }
   }

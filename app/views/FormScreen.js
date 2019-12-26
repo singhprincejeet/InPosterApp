@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, Button, ToastAndroid } from 'react-native';
+import { View, Text, TextInput, Button, ToastAndroid } from 'react-native';
 
 import { Formik } from 'formik';
 
@@ -18,6 +18,7 @@ export default class FormScreen extends React.Component {
     footerText: '',
     footerAlign: '0',
     footerFontSize: '',
+    textColor: '',
   }
 
   render() {
@@ -55,6 +56,17 @@ export default class FormScreen extends React.Component {
             handleFooterAlignChange={handleChange('footerAlign')}
             handleFooterFontSizeChange={handleChange('footerFontSize')}
           />
+          <View style={styles.sectionContainer}>
+            <View style={styles.textInput}>
+              <TextInput
+                placeholder="Text color"
+                editable
+                value={values.textColor}
+                onChangeText={handleChange('textColor')}
+              />
+            </View>
+            <Text style={styles.error}>{errors.textColor}</Text>
+          </View>
           <View style={styles.button}>
             <Button title="Generate Picture" onPress={handleSubmit} />
           </View>

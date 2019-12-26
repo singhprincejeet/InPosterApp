@@ -24,4 +24,7 @@ export default textFormValidation = object().shape({
     .test("selectAlignValue", "Footer align is a required field", val => {
       return val !== "0";
     }),
+  textColor: string()
+    .label('Text color')
+    .required(),
 })
